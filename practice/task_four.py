@@ -40,6 +40,10 @@
 # не использовать reversed() и срез [::-1] (мы закрепляем range)
 # print внутри функции — запрещён
 
+
+def print_result(b:list):
+    print(b)
+
 def return_funtion():
     list_words = [] # Список для хранения
 
@@ -55,7 +59,7 @@ def return_funtion():
 
             for i in range(quantity, -1, -1):
                 reversed_lines.append(list_words[i])
-            
             return len(list_words), reversed_lines
+        
 
-print(return_funtion())
+print_result(return_funtion())
